@@ -11,8 +11,6 @@ const Nav = () => {
   const dispatch = useAppDispatch();
   const { user, drafts } = useDataContext();
 
-  console.log('drafts: ', drafts);
-
   const onSingIn = () => signIn('google');
 
   const onSignOut = async () => {

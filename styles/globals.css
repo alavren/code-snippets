@@ -114,7 +114,7 @@
 }
 
 .snippet_layout {
-  @apply space-y-6 py-6 sm:columns-2 sm:gap-6 2xl:columns-4;
+  @apply space-y-6 py-6 sm:columns-2 sm:gap-6 xl:columns-3;
 }
 
 .feed {

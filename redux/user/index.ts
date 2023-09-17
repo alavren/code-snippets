@@ -6,7 +6,8 @@ export type UserState = {
   user: {
     id: string;
     email: string;
-    username: string;
+    name?: string;
+    username?: string;
     image: string;
   };
 };
@@ -15,7 +16,7 @@ const initialState: UserState = {
   user: {
     id: null,
     email: null,
-    username: null,
+    name: null,
     image: null,
   },
 };

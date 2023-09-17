@@ -1,12 +1,10 @@
-import { NextApiHandler } from 'next';
-import NextAuth, { Profile, Session } from 'next-auth';
-import GoogleProvider from 'next-auth/providers/google';
+import NextAuth, { Session } from 'next-auth';
+import GoogleProvider, { GoogleProfile } from 'next-auth/providers/google';
 
 import User, { UserFromDB } from '@models/user';
 import { connectToDB } from '@utils/database';
-import { GoogleProfile } from '@node_modules/next-auth/src/providers/google';
 
-const handler: NextApiHandler = NextAuth({
+const handler = NextAuth({
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,

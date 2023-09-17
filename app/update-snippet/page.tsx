@@ -1,8 +1,7 @@
 'use client';
 
-import { FormEvent, useMemo, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-
+import { useMemo } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Form from '@components/Form';
 import { useSnippetFormValues } from '@hooks/useSnippetFormValues';
 import { useSelector } from 'react-redux';

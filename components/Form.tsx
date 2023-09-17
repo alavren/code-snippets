@@ -88,7 +88,6 @@ const Form = ({ type, values, onChange, isDraft }: Props) => {
         }
         break;
       case 'update':
-        console.log('id: ', id);
         const updateResponse = await updateSnippet(id as string, {
           ...values,
           userId: user.id,

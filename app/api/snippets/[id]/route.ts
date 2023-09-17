@@ -1,4 +1,4 @@
-import Snippet, { SnippetFromDB } from '@models/snippet';
+import Snippet from '@models/snippet';
 import { connectToDB } from '@utils/database';
 
 export const GET = async (_, { params }) => {

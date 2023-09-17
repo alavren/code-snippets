@@ -2,7 +2,6 @@
 
 import React, { ChangeEvent, useState } from 'react';
 import { debounce } from 'lodash';
-
 import { useAppSelector } from '@redux/hooks';
 import { getSnippetsState } from '@redux/selectors';
 import { Snippet } from '@redux/snippets';

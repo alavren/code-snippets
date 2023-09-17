@@ -1,10 +1,10 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { useSelector } from '@node_modules/react-redux';
+import { useSelector } from 'react-redux';
 import { getSnippetById } from '@redux/selectors';
-import Link from '@node_modules/next/link';
-import Editor from '@node_modules/@monaco-editor/react';
+import Link from 'next/link';
+import Editor from '@monaco-editor/react';
 
 const SnippetDetails = () => {
   const { id } = useParams();
